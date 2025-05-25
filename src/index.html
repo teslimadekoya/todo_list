@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+  .completed span {
+    text-decoration: line-through;
+    color: gray;
+  }
+</style>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="flex justify-center items-center h-screen bg-[url('./images/i.png')] bg-cover bg-center">
+    <div class="container flex justify-center items-center w-[640px] h-100% bg-white rounded-[16px] shadow-lg px-[32px] py-[64px]">
+        <div class="todo-app">
+        <h1 class="text-[32px] font-[600] text-left mb-[24px] inter">To do App</h1>
+        <form action="" class="input-area]">
+            <input type="text" id="task-input" placeholder="Add a new task" class="border-2 w-[360px] py-[12px] px-[28px] mr-[8px] rounded-[8px] focus:outline-none focus:border-blue-500">
+            <button type="submit" id="add-task-btn"><i class="fas fa-plus p-[14px] bg-black text-white text-[24px] rounded-[8px]"></i></button>
+        </form>
+        <div class="todos-container flex items-center justify-center flex-col mt-[24px]">
+            <ul id="task-list" class=" w-full list-disc pl-[20px]">
+
+            </ul>
+            <img src="./images/empty.svg" alt="empty" class="empty-image h-[124px] hidden">
+        </div>
+        </div>
+    </div> 
+  <script src="index.js"></script>
+</body>
+</html>
